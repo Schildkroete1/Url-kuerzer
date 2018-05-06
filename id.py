@@ -6,7 +6,7 @@ hashids = Hashids()
 
 def insert():
 
-    client = MySQLdb.connect(host="localhost", user="", passwd="", db="shorter")
+    client = MySQLdb.connect(host="localhost", user="", passwd="", db="")
     cursor = client.cursor()
     sql = "SELECT id FROM id WHERE used=0"
     client.query(sql)
